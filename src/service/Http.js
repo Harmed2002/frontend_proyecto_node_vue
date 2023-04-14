@@ -6,10 +6,13 @@ const urlServidor = 'http://127.0.0.1:3000/api';
 
 // Configuro la conexion a la api con axios
 export const http = () => {
+    let access_token = localStorage.getItem('access_token');
+
     const interceptor = axios.create({
         baseURL: urlServidor,
         headers: {
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'Authorization': 'Bearer ' + access_token
         },
         timeout: 30000
     })

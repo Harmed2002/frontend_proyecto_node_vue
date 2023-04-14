@@ -14,6 +14,7 @@
 				<RouterLink to="/">Inicio</RouterLink> | 
 				<RouterLink to="/about">Nosotros</RouterLink> | 
 				<RouterLink to="/registro">Regístrate</RouterLink> |
+				<RouterLink to="/login">Login</RouterLink> |
 			</nav>
 		</div>
 	</header>

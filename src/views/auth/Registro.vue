@@ -12,7 +12,7 @@
 
 <script>
     import { ref } from "vue"
-    import authService from "../../services/AuthService"
+    import authService from "../../service/AuthService"
 
     export default {
         setup(){
