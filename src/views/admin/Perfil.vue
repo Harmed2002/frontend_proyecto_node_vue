@@ -1,6 +1,8 @@
 <template>
-	<h1>Perfil</h1>
-	{{ perfil }}
+	<div class="card">
+		<h1>Perfil</h1>
+		{{ perfil }}
+	</div>
 </template>
 
 <script>

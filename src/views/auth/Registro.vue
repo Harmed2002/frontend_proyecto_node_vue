@@ -8,13 +8,17 @@
         <input type="password" placeholder="Contraseña" v-model="usuario.password">
         <input type="button" value="Registrarse" @click="registrarse">
     </div>
+
+    <Carrito></Carrito>
 </template>
 
 <script>
     import { ref } from "vue"
     import authService from "../../service/AuthService"
+    import Carrito from '../../components/Carrito.vue'
 
     export default {
+        components: { Carrito },
         setup(){
             const usuario = ref({})
 
