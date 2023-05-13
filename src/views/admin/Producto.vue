@@ -136,7 +136,7 @@
 		</div>
 		<template #footer>
 			<Button label="Cancelar" icon="pi pi-times" text @click="hideDialog"/>
-			<Button label="Guardar" icon="pi pi-check" text @click="saveProduct" />
+			<Button label="Guardar" icon="pi pi-save" text @click="saveProduct" />
 		</template>
 	</Dialog>
 

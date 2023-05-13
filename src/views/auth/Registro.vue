@@ -10,17 +10,23 @@
     </div>
 
     <Carrito></Carrito>
+
+    <h1>{{ store.contador }}</h1>
+    <button @click="store.incrementar">+</button>
+    <button @click="store.decrementar">-</button>
 </template>
 
 <script>
     import { ref } from "vue"
     import authService from "../../service/AuthService"
     import Carrito from '../../components/Carrito.vue'
+    import { useContadorStore } from '@/stores/contador'
 
     export default {
         components: { Carrito },
         setup(){
-            const usuario = ref({})
+            const usuario = ref({});
+            const store = useContadorStore();
 
             const registrarse = async () => {
                 const { data } = await authService.registroUsuario(usuario.value);
@@ -28,7 +34,8 @@
 
             return {
                 usuario,
-                registrarse
+                registrarse,
+                store
             }
         }
     }

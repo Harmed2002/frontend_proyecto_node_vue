@@ -30,7 +30,7 @@ const model = ref([
 	{
 		label: 'Cartera',
 		items: [
-			{ label: 'Listado de Ctas. por Cobrar', icon: 'pi pi-fw pi-prime', to: '/utilities/icons' },
+			{ label: 'Lista de Ctas. por Cobrar', icon: 'pi pi-fw pi-list', to: '/utilities/icons' },
 			{ label: 'PrimeFlex', icon: 'pi pi-fw pi-desktop', to: '/utilities/icons' }
 		]
 	},
